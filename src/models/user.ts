@@ -1,7 +1,6 @@
 import mongoose from "mongoose";
 
 const userSchema = new mongoose.Schema({
-  _id: Object,
   auth0Id: {
     type: String,
     required: true,
@@ -11,7 +10,7 @@ const userSchema = new mongoose.Schema({
     required: true,
   },
   name: {
-    type: String, 
+    type: String,
   },
   addressLine1: {
     type: String,
